@@ -1,23 +1,17 @@
 {
 	"private": true,
-	"name": "volar",
+	"name": "holar",
 	"version": "1.8.18",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/vuejs/language-tools.git",
+		"url": "https://github.com/johnsusek/holar.git",
 		"directory": "packages/vscode-vue"
 	},
-	"categories": [
-		"Programming Languages"
-	],
-	"sponsor": {
-		"url": "https://github.com/sponsors/johnsoncodehk"
-	},
 	"icon": "images/icon.png",
-	"displayName": "Vue Language Features (Volar)",
-	"description": "Language support for Vue 3",
-	"author": "johnsoncodehk",
-	"publisher": "Vue",
+	"displayName": "Ludi Language Support",
+	"description": "Language support for .hue components",
+	"author": "johnsusek",
+	"publisher": "John Susek",
 	"engines": {
 		"vscode": "^1.82.0"
 	},
@@ -32,21 +26,6 @@
 	],
 	"main": "./client.js",
 	"browser": "./web.js",
-	"capabilities": {
-		"virtualWorkspaces": {
-			"supported": "limited",
-			"description": "Install https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-web to have IntelliSense for .vue files in Web IDE."
-		},
-		"untrustedWorkspaces": {
-			"supported": "limited",
-			"description": "%volar.workspaceTrust.description%",
-			"restrictedConfigurations": [
-				"typescript.tsdk",
-				"typescript.tsserver.pluginPaths",
-				"typescript.npm"
-			]
-		}
-	},
 	"contributes": {
 		"jsonValidation": [
 			{
@@ -231,7 +210,8 @@
 					"source.json5": "json5",
 					"source.yaml": "yaml",
 					"source.toml": "toml",
-					"source.graphql": "graphql"
+					"source.graphql": "graphql",
+					"source.hx": "hx"
 				},
 				"unbalancedBracketScopes": [
 					"keyword.operator.relational",
@@ -274,7 +254,8 @@
 					"source.json5": "json5",
 					"source.yaml": "yaml",
 					"source.toml": "toml",
-					"source.graphql": "graphql"
+					"source.graphql": "graphql",
+					"source.hx": "hx"
 				}
 			},
 			{
