@@ -1,1 +1,3 @@
-VSCode language support for Ludi + Haxe.
+# Holar
+
+VSCode language support for Ludi components.
